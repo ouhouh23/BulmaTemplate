@@ -18,39 +18,39 @@
 <body>
   <div class="container-xxl">
     <div class="row">
-    	<nav class=" navbar col-12 col-sm-3 bg-dark bg-opacity-75 p-0">Side nav
-    		<a class="navbar-brand" href="#">
-    		  <img src="assets/logo.svg" alt="Company logo" />
+    	<nav class="col-12 col-md-3 bg-dark bg-opacity-75 navbar align-items-start px-0 pb-0 pt-4 text-white">
+    		<a class="navbar-brand px-4 fs-6 text-reset fw-bold w-100 text-center" href="#">
+    		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
     		  <span>Company name</span>
     		</a>
 
-    		<ul class="navbar-nav w-100 text-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+    		<ul class="navbar-nav w-100">
+          <li class="nav-item mt-5">
+            <a class="nav-link active text-reset fw-bold" aria-current="page" href="#">Dashboard</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">User management</a>
+          <li class="nav-item mt-5">
+            <a class="nav-link text-reset" href="#">User management</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Documents</a>
+          <li class="nav-item mt-5">
+            <a class="nav-link text-reset" href="#">Documents</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Statistics</a>
+          <li class="nav-item mt-5">
+            <a class="nav-link text-reset" href="#">Statistics</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Settings</a>
+          <li class="nav-item mt-5">
+            <a class="nav-link text-reset" href="#">Settings</a>
           </li>
-          <li class="nav-item bg-dark d-block">
-            <a class="nav-link" href="#">Logout</a>
+          <li class="nav-item bg-dark d-block mt-auto">
+            <a class="nav-link text-reset" href="#">Logout</a>
           </li>
         </ul>
     	</nav>
 
-    	<div class="col-12 col-sm-9 p-0">
-        <header class="d-flex align-items-center m-3">
+    	<div class="col-12 col-sm-9 p-0 bg-light">
+        <header class="d-flex align-items-center p-3 bg-white">
           <a href="#">Dashboard overview</a>
 
-          <div class="input-group w-auto align-items-center opacity-75 ms-3 me-auto">
+          <div class="input-group w-auto align-items-center opacity-25 ms-3 me-auto">
             <span class="position-absolute input-group__prepend">
               <i class="fa fa-search"></i>
             </span>
@@ -75,7 +75,7 @@
             </a>
           </div>
 
-          <a class="btn btn-info me-3" href="#" role="button">Download client</a>
+          <a class="btn btn-info btn-sm me-3" href="#" role="button">Download client</a>
 
           <div class="dropstart">
             <a class="btn position-relative p-0" role="button" 
@@ -87,7 +87,7 @@
               <span class="position-absolute bottom-0 end-0 p-2 
                 bg-success border border-light rounded-circle">
 
-                <span class="visually-hidden">Unread messages</span>
+                <span class="visually-hidden">Online</span>
               </span>
             </a>
 
@@ -99,6 +99,214 @@
           </div>
         </header>
 
+        <section class="m-3 bg-white">
+          <header class="d-flex align-items-center p-3">
+            <a href="#">
+              <h2 class="fs-4">Order Catalogue
+                <span class="badge bg-success fs-6">New items</span>
+              </h2>
+            </a>
+
+            <form class="d-flex ms-auto">
+              <div class="input-group w-auto dropdown">
+                <a class="btn p-0 d-flex align-items-center opacity-25" role="button" 
+                  data-bs-toggle="dropdown" id="selectColumn" 
+                  aria-expanded="false" href="#">
+
+                  <span class="position-absolute input-group__append">
+                    <i class="fa-solid fa-arrow-right-arrow-left rotated"></i>
+                  </span>
+
+                  <div class="form-control py-2 input-group__body">
+                    Select column
+                  </div>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="selectColumn">
+                  <li><a class="dropdown-item" href="#">first column</a></li>
+                  <li><a class="dropdown-item" href="#">second column</a></li>
+                  <li><a class="dropdown-item" href="#">third column</a></li>
+                </ul>
+              </div>
+
+              <div class="input-group w-auto align-items-center ms-3 opacity-25">
+                <span class="position-absolute input-group__prepend">
+                  <i class="fa fa-search"></i>
+                </span>
+
+                <input class="form-control py-2 input-group__body" type="search" placeholder="Search list...">
+              </div>
+            </form>
+
+            <a class="mx-3" href="#">
+              <img src="assets/triangle.svg" alt="pyramid">
+            </a>
+
+            <a class="btn btn-info" href="#" role="button">Add new</a>
+          </header>
+
+          <table class="table opacity-75">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product</th>
+                <th scope="col">Serial code</th>
+                <th scope="col">Stock</th>
+                <th scope="col" class="pe-5">Category</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="border-top-0">
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">03</th>
+                <td>Mackbook Pro 16</td>
+                <td>#123-456ABC</td>
+                <td>123</td>
+                <td>Apple</td>
+                <td colspan="2">
+                  <a class="me-2" href="#">Edit</a> 
+                  <a href="#">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer class="d-flex justify-content-center position-relative py-3 mt-auto me-3">
+            <nav aria-label="Page navigation">
+              <ul class="pagination pagination-sm mb-0">
+                <li class="page-item">
+                  <a class="page-link py-1 me-3" href="#" aria-label="Previous">
+                    <span aria-hidden="true" class="text-dark fw-bold">&lt;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">...10</a></li>
+                <li class="page-item">
+                  <a class="page-link py-1 ms-3" href="#" aria-label="Next">
+                    <span aria-hidden="true" class="text-dark fw-bold">&gt;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <select class="form-select w-auto opacity-25 position-absolute top-50 end-0 translate-middle-y" aria-label="select-form">
+              <option selected>Display 10 items</option>
+              <option value="1">Display 30 items</option>
+              <option value="2">Display 50 items</option>
+              <option value="3">Display 100 items</option>
+            </select>
+          </footer>
+        </section>
       </div>
     </div>
   </div>

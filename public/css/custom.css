@@ -1,9 +1,49 @@
+.container-xxl a {
+  text-decoration: none;
+  color: #4A5568;
+}
+
+.table tbody tr th, 
+.table tbody tr td {
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
+}
+
 .input-group__prepend {
 	z-index: 1;
 	left: 0.5rem;
 }
 
+.input-group__append {
+	right: 0.5rem;
+}
+
 .input-group__body {
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+
+.rotated {
+	transform: rotate(90deg);
+}
+
+.page-item .page-link {
+	border: none;
+	color: #CBD5E0;
+}
+
+.page-item.active .page-link {
+	padding: 0.15rem 0.5rem;
+	background: #F16EAD;
+	border-radius: 50%;
+}
+
+.navbar-nav {
+	height: calc(100% - 55px);
+}
+
+.navbar-nav .nav-item .nav-link {
+	max-width: 9.5rem;
+	margin-left: auto;
+	margin-right: auto;
 }
