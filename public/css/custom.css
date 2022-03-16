@@ -47,3 +47,17 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.nav-item_active {
+	border-right: 6px solid #E03386;
+	margin-right: -6px;
+	padding-right: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-item_active {
+		border-right: none;
+		margin-right: 0;
+		padding-right: 0;
+	}
+}
