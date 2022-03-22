@@ -6,8 +6,19 @@ html a {
 }
 
 /**
- * Input width block  
+ * Input, form - width block  
  */
+
 .input-width {
-  width: 11rem;
+  width: 12rem;
+}
+
+@media screen and (max-width: 992px) {
+  .input-width {
+    width: 100%;
+  }
+
+  .form-width {
+  	width: 100%;
+  }
 }

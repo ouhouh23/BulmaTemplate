@@ -68,88 +68,112 @@
       	</nav>
 
       	<div class="h-100 d-flex flex-column 
-          container-fluid p-0 bg-light">
-          <header class="p-3 bg-white">
-            <div class="container-xxl d-flex
-              flex-wrap flex-xl-nowrap">
-              <div class="container-fluid d-flex align-items-center
-              justify-content-between flex-column flex-sm-row
-              flex-wrap text-nowrap p-0
-              me-0 me-xl-5">
-                <a class="d-md-none mb-3 mb-sm-0" data-bs-toggle="offcanvas" 
-                  href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                  <svg viewBox="0 0 100 80" width="24" height="20">
-                    <rect width="100" height="13"></rect>
-                    <rect y="30" width="100" height="13"></rect>
-                    <rect y="60" width="100" height="13"></rect>
-                  </svg>
-                </a>
+          container-fluid p-0 bg-light">  
+          <header class="p-3 mb-3 bg-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center 
+                justify-content-center justify-content-lg-start">
 
-                <div class="offcanvas offcanvas-start" style="width: 250px;" 
-                  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                  <div class="offcanvas-body p-0">
-                    <nav class="h-100 d-flex flex-column p-0 bg-dark">
-                      <a class="p-3 w-bold w-100" href="#">
-                        <img class="me-1" src="assets/logo.svg" alt="Company logo" />
+                <div class="nav col-12 col-lg-auto 
+                  me-lg-auto mb-2 justify-content-center
+                  align-items-center mb-2 mb-lg-0">
+                  <a class="d-md-none px-3" data-bs-toggle="offcanvas" 
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <svg viewBox="0 0 100 80" width="24" height="20">
+                      <rect width="100" height="13"></rect>
+                      <rect y="30" width="100" height="13"></rect>
+                      <rect y="60" width="100" height="13"></rect>
+                    </svg>
+                  </a>
 
-                        <span>Company name</span>
-                      </a>
+                  <div class="offcanvas offcanvas-start" style="width: 250px;" 
+                    tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body p-0">
+                      <nav class="h-100 d-flex flex-column p-0 bg-dark">
+                        <a class="p-3 w-bold w-100" href="#">
+                          <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
-                      <ul class="nav h-100 flex-column">
-                        <li class="nav-item mt-3">
-                          <a class="nav-link active" 
-                            aria-current="page" href="#">
-                            Dashboard
-                          </a>
-                        </li>
+                          <span>Company name</span>
+                        </a>
 
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">
-                            User management
-                          </a>
-                        </li>
+                        <ul class="nav h-100 flex-column">
+                          <li class="nav-item mt-3">
+                            <a class="nav-link active" 
+                              aria-current="page" href="#">
+                              Dashboard
+                            </a>
+                          </li>
 
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">
-                            Documents
-                          </a>
-                        </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link" href="#">
+                              User management
+                            </a>
+                          </li>
 
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">
-                            Statistics
-                          </a>
-                        </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link" href="#">
+                              Documents
+                            </a>
+                          </li>
 
-                        <li class="nav-item mt-3">
-                          <a class="nav-link" href="#">
-                            Settings
-                          </a>
-                        </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link" href="#">
+                              Statistics
+                            </a>
+                          </li>
 
-                        <li class="nav-item bg-info mt-auto">
-                          <a class="nav-link" href="#">
-                            Logout
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>                
+                          <li class="nav-item mt-3">
+                            <a class="nav-link" href="#">
+                              Settings
+                            </a>
+                          </li>
+
+                          <li class="nav-item bg-info mt-auto">
+                            <a class="nav-link" href="#">
+                              Logout
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>                
+                    </div>
                   </div>
+
+
+                  <nav aria-label="breadcrumb text-nowrap px-3">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                      </li>
+
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Dashboard
+                      </li>
+                    </ol>
+                  </nav>
+
+                  <div class="px-3">
+                    <a href="#">Inbox</a>
+
+                    <a href="#">
+                      <i class="fa-solid fa-inbox position-relative">
+                        <span class="position-absolute top-0 start-100 
+                          translate-middle p-1 bg-danger border 
+                          border-light rounded-circle">
+
+                          <span class="visually-hidden">Unread messages
+                          </span>
+                        </span>
+                      </i>
+                    </a>
+                  </div>
+
+                  <a class="btn btn-info btn-sm px-3"
+                    href="#" role="button">Download client
+                  </a>
                 </div>
 
-                <nav aria-label="breadcrumb mb-3 mb-sm-0">
-                  <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                      <a href="#">Home</a>
-                    </li>
-
-                    <li class="breadcrumb-item active" aria-current="page">
-                      Dashboard
-                    </li>
-                  </ol>
-                </nav>
-
-                <div class="input-group input-width mb-3 mb-sm-0">
+                <div class="input-group input-width col-12 col-lg-auto
+                  mb-3 mb-lg-0 me-lg-3">
                   <span class="input-group-text" id="basic-addon1">
                     <i class="fa fa-search"></i>
                   </span>
@@ -157,33 +181,7 @@
                     aria-label="Search all..." aria-describedby="basic-addon1">
                 </div>
 
-                <a class="mb-3 mb-sm-0" href="#">Help guides</a>
-              </div>
-
-              <div class="container-fluid d-flex align-items-center
-                justify-content-between flex-column flex-sm-row
-                flex-wrap p-0">
-                <div class="mb-3 mb-sm-0">
-                  <a href="#">Inbox</a>
-
-                  <a href="#">
-                    <i class="fa-solid fa-inbox position-relative">
-                      <span class="position-absolute top-0 start-100 
-                        translate-middle p-1 bg-danger border 
-                        border-light rounded-circle">
-                        
-                        <span class="visually-hidden">Unread messages
-                        </span>
-                      </span>
-                    </i>
-                  </a>
-                </div>
-
-                <a class="btn btn-info btn-sm mb-3 mb-sm-0"
-                  href="#" role="button">Download client
-                </a>
-
-                <div class="dropstart mb-3 mb-sm-0">
+                <div class="dropdown text-end">
                   <a class="btn position-relative p-0" role="button" 
                     data-bs-toggle="dropdown" id="dropdownProfile" 
                     aria-expanded="false" href="#">
@@ -227,17 +225,18 @@
               </a>
 
               <form class="d-flex ms-0 ms-sm-auto
-                flex-column flex-sm-row 
-                justify-content-center mb-0 mb-sm-3">
+                form-width flex-column flex-lg-row
+                justify-content-center
+                mb-3">
                 <select class="form-select input-width
-                  mb-3 mb-sm-0" aria-label="Select column">
+                  mb-3 mb-lg-0" aria-label="Select column">
                   <option selected>Select column</option>
                   <option value="1">Column one</option>
                   <option value="2">Column two</option>
                   <option value="3">Column three</option>
                 </select>
 
-                <div class="input-group input-width ms-0 ms-sm-5">
+                <div class="input-group input-width ms-0 ms-lg-5">
                   <span class="input-group-text" id="basic-addon2">
                     <i class="fa fa-search"></i>
                   </span>
@@ -273,7 +272,7 @@
               </a>
             </header>
 
-            <div class="table-responsive-sm">
+            <div class="table-responsive-md">
               <table class="table">
                 <thead class="table-light">
                   <tr>
@@ -449,7 +448,7 @@
                 </ul>
               </nav>
 
-              <select class="form-select input-width
+              <select class="form-select w-auto
                 mb-3 mb-sm-0" aria-label="select-form">
                 <option selected>Display 10 items</option>
                 <option value="1">Display 30 items</option>
