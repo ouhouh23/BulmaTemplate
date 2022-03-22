@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,198 +17,271 @@
     <title>Bootstrap CMS</title>
   </head>
 
-  <body>
-    <div class="container-xxl">
-      <div class="row">
-      	<nav class="col-12 col-md-3 bg-dark bg-opacity-75
-          navbar align-items-start text-white
-          px-0 pb-0 pt-4">
-      		<a class="navbar-brand px-2 fs-6 text-reset
-            fw-bold w-100 text-center" href="#">
+  <body class="h-100">
+    <div class="h-100 container-fluid p-0 d-flex">
+      	<nav class="h-100 d-none d-md-flex 
+          flex-column p-0 bg-dark">
+      		<a class="p-3 w-bold text-nowrap" href="#">
       		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
       		  <span>Company name</span>
       		</a>
 
-      		<ul class="navbar-nav justify-content-between flex-wrap
-            flex-row flex-md-column w-100 px-3 px-md-0">
-            <li class="nav-item nav-item_active 
-              mt-md-5 px-2 px-md-0">
-              <a class="nav-link active text-reset fw-bold" 
+      		<ul class="nav h-100 flex-column" style="width: 250px">
+            <li class="nav-item mt-3">
+              <a class="nav-link active" 
                 aria-current="page" href="#">
                 Dashboard
               </a>
             </li>
 
-            <li class="nav-item mt-md-5 px-2 px-md-0">
-              <a class="nav-link text-reset" href="#">
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
                 User management
               </a>
             </li>
 
-            <li class="nav-item mt-md-5 px-2 px-md-0">
-              <a class="nav-link text-reset" href="#">
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
                 Documents
               </a>
             </li>
 
-            <li class="nav-item mt-md-5 px-2 px-md-0">
-              <a class="nav-link text-reset" href="#">
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
                 Statistics
               </a>
             </li>
 
-            <li class="nav-item mt-md-5 px-2 px-md-0">
-              <a class="nav-link text-reset" href="#">
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
                 Settings
               </a>
             </li>
 
-            <li class="nav-item bg-dark
-              mt-md-auto px-2 px-md-0">
-              <a class="nav-link text-reset" href="#">
+            <li class="nav-item bg-info mt-auto">
+              <a class="nav-link" href="#">
                 Logout
               </a>
             </li>
           </ul>
       	</nav>
 
-      	<div class="col-12 col-md-9 p-0 bg-light">
-          <header class="d-flex align-items-center
-            flex-wrap justify-content-evenly
-            p-3 bg-white text-nowrap">
-            <a class="opacity-50" href="#">Dashboard overview</a>
+      	<div class="h-100 d-flex flex-column 
+          container-fluid p-0 bg-light">
+          <header class="p-3 bg-white">
+            <div class="container-xxl d-flex
+              flex-wrap flex-xl-nowrap">
+              <div class="container-fluid d-flex align-items-center
+              justify-content-between flex-column flex-sm-row
+              flex-wrap text-nowrap p-0
+              me-0 me-xl-5">
+                <a class="d-md-none mb-3 mb-sm-0" data-bs-toggle="offcanvas" 
+                  href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <svg viewBox="0 0 100 80" width="24" height="20">
+                    <rect width="100" height="13"></rect>
+                    <rect y="30" width="100" height="13"></rect>
+                    <rect y="60" width="100" height="13"></rect>
+                  </svg>
+                </a>
 
-            <div class="input-group input-width align-items-center 
-              opacity-25 ms-3 me-0 me-sm-auto">
-              <span class="position-absolute input-group__prepend">
-                <i class="fa fa-search"></i>
-              </span>
+                <div class="offcanvas offcanvas-start" style="width: 250px;" 
+                  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-body p-0">
+                    <nav class="h-100 d-flex flex-column p-0 bg-dark">
+                      <a class="p-3 w-bold w-100" href="#">
+                        <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
-              <input class="form-control py-2 ps-5"
-                type="search" placeholder="Search all..." />
-            </div>
+                        <span>Company name</span>
+                      </a>
 
-            <a href="#">Help guides</a>
+                      <ul class="nav h-100 flex-column">
+                        <li class="nav-item mt-3">
+                          <a class="nav-link active" 
+                            aria-current="page" href="#">
+                            Dashboard
+                          </a>
+                        </li>
 
-            <div class="mx-4 d-flex align-items-center">
-              <a href="#">Inbox</a>
+                        <li class="nav-item mt-3">
+                          <a class="nav-link" href="#">
+                            User management
+                          </a>
+                        </li>
 
-              <a class="fs-5 pt-1 ms-2" href="#">
-                <i class="fa-solid fa-inbox position-relative">
-                  <span class="position-absolute top-0 start-100 translate-middle
-                    p-1 bg-danger border border-light rounded-circle">
+                        <li class="nav-item mt-3">
+                          <a class="nav-link" href="#">
+                            Documents
+                          </a>
+                        </li>
 
-                    <span class="visually-hidden">Unread messages
-                    </span>
+                        <li class="nav-item mt-3">
+                          <a class="nav-link" href="#">
+                            Statistics
+                          </a>
+                        </li>
+
+                        <li class="nav-item mt-3">
+                          <a class="nav-link" href="#">
+                            Settings
+                          </a>
+                        </li>
+
+                        <li class="nav-item bg-info mt-auto">
+                          <a class="nav-link" href="#">
+                            Logout
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>                
+                  </div>
+                </div>
+
+                <nav aria-label="breadcrumb mb-3 mb-sm-0">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                      <a href="#">Home</a>
+                    </li>
+
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Dashboard
+                    </li>
+                  </ol>
+                </nav>
+
+                <div class="input-group input-width mb-3 mb-sm-0">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fa fa-search"></i>
                   </span>
-                </i>
-              </a>
-            </div>
+                  <input type="search" class="form-control" placeholder="Search all..."
+                    aria-label="Search all..." aria-describedby="basic-addon1">
+                </div>
 
-            <a class="btn btn-info btn-sm me-3 text-white"
-              href="#" role="button">Download client
-            </a>
+                <a class="mb-3 mb-sm-0" href="#">Help guides</a>
+              </div>
 
-            <div class="dropstart mt-3 mt-xl-0">
-              <a class="btn position-relative p-0" role="button" 
-                data-bs-toggle="dropdown" id="dropdownProfile" 
-                aria-expanded="false" href="#">
+              <div class="container-fluid d-flex align-items-center
+                justify-content-between flex-column flex-sm-row
+                flex-wrap p-0">
+                <div class="mb-3 mb-sm-0">
+                  <a href="#">Inbox</a>
 
-                <img class="rounded-circle" src="assets/profile.jpg"
-                  alt="Godlike guy" width="50" />
+                  <a href="#">
+                    <i class="fa-solid fa-inbox position-relative">
+                      <span class="position-absolute top-0 start-100 
+                        translate-middle p-1 bg-danger border 
+                        border-light rounded-circle">
+                        
+                        <span class="visually-hidden">Unread messages
+                        </span>
+                      </span>
+                    </i>
+                  </a>
+                </div>
 
-                <span class="position-absolute bottom-0 end-0 p-2 
-                  bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Online</span>
-                </span>
-              </a>
+                <a class="btn btn-info btn-sm mb-3 mb-sm-0"
+                  href="#" role="button">Download client
+                </a>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
-                <li>
-                  <a class="dropdown-item" href="#">Action</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-          </header>
-
-          <section class="m-3 bg-white">
-            <header class="d-flex align-items-center p-3
-              text-nowrap flex-wrap justify-content-evenly">
-              <a href="#">
-                <h2 class="fs-5">Order Catalogue
-                  <span class="badge bg-success fs-6 opacity-75">New items</span>
-                </h2>
-              </a>
-
-              <form class="d-flex ms-auto flex-wrap justify-content-center">
-                <div class="input-group w-auto dropdown mb-3 mb-sm-0">
-                  <a class="btn p-0 d-flex 
-                    align-items-center opacity-25" role="button" 
-                    data-bs-toggle="dropdown" id="selectColumn" 
+                <div class="dropstart mb-3 mb-sm-0">
+                  <a class="btn position-relative p-0" role="button" 
+                    data-bs-toggle="dropdown" id="dropdownProfile" 
                     aria-expanded="false" href="#">
-                    <span class="position-absolute input-group__append">
-                      <i class="fa-solid fa-arrow-right-arrow-left rotated">
-                      </i>
-                    </span>
 
-                    <div class="form-control input-width py-2 pe-5">
-                      Select column
-                    </div>
+                    <img class="rounded-circle" src="assets/profile.jpg"
+                      alt="Godlike guy" width="50" />
+
+                    <span class="position-absolute bottom-0 end-0 p-2 
+                      bg-success border border-light rounded-circle">
+                      <span class="visually-hidden">Online</span>
+                    </span>
                   </a>
 
-                  <ul class="dropdown-menu" aria-labelledby="selectColumn">
+                  <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
                     <li>
-                      <a class="dropdown-item" href="#">first column</a>
+                      <a class="dropdown-item" href="#">Action</a>
                     </li>
 
                     <li>
-                      <a class="dropdown-item" href="#">second column</a>
+                      <a class="dropdown-item" href="#">Another action</a>
                     </li>
 
                     <li>
-                      <a class="dropdown-item" href="#">third column</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
                     </li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </header>
 
-                <div class="input-group input-width align-items-center 
-                  ms-0 ms-sm-3 mb-3 mb-sm-0 opacity-25">
-                  <span class="position-absolute input-group__prepend">
+          <section class="h-100 d-flex flex-column container-xxl 
+            mx-auto my-3 bg-white p-0">
+            <header class="d-flex align-items-center p-3
+              text-nowrap flex-wrap justify-content-evenly
+              flex-column flex-sm-row">
+              <a class="mb-3" href="#">
+                <h5 class="h5 mb-0">Order Catalogue
+                  <span class="badge bg-success">New items</span>
+                </h2>
+              </a>
+
+              <form class="d-flex ms-0 ms-sm-auto
+                flex-column flex-sm-row 
+                justify-content-center mb-0 mb-sm-3">
+                <select class="form-select input-width
+                  mb-3 mb-sm-0" aria-label="Select column">
+                  <option selected>Select column</option>
+                  <option value="1">Column one</option>
+                  <option value="2">Column two</option>
+                  <option value="3">Column three</option>
+                </select>
+
+                <div class="input-group input-width ms-0 ms-sm-5">
+                  <span class="input-group-text" id="basic-addon2">
                     <i class="fa fa-search"></i>
                   </span>
-
-                  <input class="form-control py-2 ps-5"
-                    type="search" placeholder="Search list..." />
+                  <input type="search" class="form-control" placeholder="Search list"
+                    aria-label="Search list" aria-describedby="basic-addon2">
                 </div>
               </form>
 
-              <a class="mx-3" href="#">
-                <img src="assets/triangle.svg" alt="pyramid" />
-              </a>
+              <div class="dropstart mb-3">
+                <a class="btn mx-3" role="button" 
+                  data-bs-toggle="dropdown" id="dropdownFilters" 
+                  aria-expanded="false" href="#">
 
-              <a class="btn btn-info text-white
-                mt-3 mt-xl-0" href="#" role="button">Add new
+                  <img src="assets/triangle.svg" alt="pyramid" />
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownFilters">
+                  <li>
+                    <a class="dropdown-item" href="#">Filter 25</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Filter 50</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Filter 100</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a class="btn btn-info mb-3" href="#" role="button">Add new
               </a>
             </header>
 
             <div class="table-responsive-sm">
-              <table class="table opacity-75">
+              <table class="table">
                 <thead class="table-light">
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Product</th>
                     <th scope="col">Serial code</th>
                     <th scope="col">Stock</th>
-                    <th scope="col" class="pe-0 pe-sm-5">Category</th>
+                    <th scope="col">Category</th>
                     <th scope="col">Actions</th>
                   </tr>
                 </thead>
@@ -336,13 +409,14 @@
               </table>
             </div>
 
-            <footer class="d-flex justify-content-lg-center
-              position-relative py-3 mt-auto me-3">
-              <nav aria-label="Page navigation" class="mx-auto mx-sm-0">
+            <footer class="d-flex align-items-center
+              flex-column-reverse flex-sm-row
+              py-3 mt-auto me-3">
+              <nav aria-label="Page navigation" class="mx-auto">
                 <ul class="pagination pagination-sm mb-0">
                   <li class="page-item">
-                    <a class="page-link py-1 me-3" href="#" aria-label="Previous">
-                      <span aria-hidden="true" class="text-dark fw-bold">&lt;</span>
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&lt;</span>
                     </a>
                   </li>
 
@@ -367,17 +441,16 @@
                   </li>
 
                   <li class="page-item">
-                    <a class="page-link py-1 ms-3" href="#" aria-label="Next">
-                      <span aria-hidden="true" class="text-dark fw-bold">&gt;
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&gt;
                       </span>
                     </a>
                   </li>
                 </ul>
               </nav>
 
-              <select class="form-select input-width d-none d-sm-block
-                opacity-25 position-absolute 
-                top-50 end-0 translate-middle-y" aria-label="select-form">
+              <select class="form-select input-width
+                mb-3 mb-sm-0" aria-label="select-form">
                 <option selected>Display 10 items</option>
                 <option value="1">Display 30 items</option>
                 <option value="2">Display 50 items</option>
@@ -387,6 +460,5 @@
           </section>
         </div>
       </div>
-    </div>
   </body>
 </html>
