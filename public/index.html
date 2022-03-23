@@ -17,129 +17,144 @@
     <title>Bootstrap CMS</title>
   </head>
 
-  <body class="h-100">
-    <div class="h-100 container-fluid p-0 d-flex">
-      	<nav class="h-100 d-none d-md-flex 
-          flex-column p-0 bg-dark bg-opacity-75">
-      		<a class="p-3 w-bold text-nowrap text-white text-decoration-none" href="#">
-      		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
+  <body class="h-100 d-flex">
+  	<nav class=" d-none d-md-flex 
+      flex-column p-0 bg-dark bg-opacity-75">
+  		<a class="p-3 w-bold text-nowrap text-white text-decoration-none" href="#">
+  		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
-      		  <span>Company name</span>
-      		</a>
+  		  <span>Company name</span>
+  		</a>
 
-      		<ul class="nav h-100 flex-column" style="width: 250px">
-            <li class="nav-item mt-3">
-              <a class="nav-link active text-white" 
-                aria-current="page" href="#">
-                Dashboard
+  		<ul class="nav h-100 flex-column" style="width: 250px">
+        <li class="nav-item mt-3">
+          <a class="nav-link active text-white" 
+            aria-current="page" href="#">
+            Dashboard
+          </a>
+        </li>
+
+        <li class="nav-item mt-3">
+          <a class="nav-link text-white" href="#">
+            User management
+          </a>
+        </li>
+
+        <li class="nav-item mt-3">
+          <a class="nav-link text-white" href="#">
+            Documents
+          </a>
+        </li>
+
+        <li class="nav-item mt-3">
+          <a class="nav-link text-white" href="#">
+            Statistics
+          </a>
+        </li>
+
+        <li class="nav-item mt-3">
+          <a class="nav-link text-white" href="#">
+            Settings
+          </a>
+        </li>
+
+        <li class="nav-item bg-dark mt-auto">
+          <a class="nav-link text-white" href="#">
+            Logout
+          </a>
+        </li>
+      </ul>
+  	</nav>
+
+  	<div class="w-100 bg-light overflow-auto d-flex flex-column">  
+      <header class="p-3 bg-white">
+        <div class="container-xxl">
+          <div class="row gy-2 align-items-center">
+            <div class="col-2 d-md-none">  
+              <a data-bs-toggle="offcanvas" 
+                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <svg viewBox="0 0 100 80" width="24" height="20">
+                  <rect width="100" height="13"></rect>
+                  <rect y="30" width="100" height="13"></rect>
+                  <rect y="60" width="100" height="13"></rect>
+                </svg>
               </a>
-            </li>
 
-            <li class="nav-item mt-3">
-              <a class="nav-link text-white" href="#">
-                User management
-              </a>
-            </li>
+              <div class="offcanvas offcanvas-start" style="width: 250px;" 
+                tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-body p-0">
+                  <nav class="h-100 d-flex flex-column p-0 bg-dark bg-opacity-75">
+                    <a class="p-3 w-bold text-white text-decoration-none" href="#">
+                      <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
-            <li class="nav-item mt-3">
-              <a class="nav-link text-white" href="#">
-                Documents
-              </a>
-            </li>
+                      <span>Company name</span>
+                    </a>
 
-            <li class="nav-item mt-3">
-              <a class="nav-link text-white" href="#">
-                Statistics
-              </a>
-            </li>
+                    <ul class="nav h-100 flex-column ">
+                      <li class="nav-item mt-3">
+                        <a class="nav-link active text-white" 
+                          aria-current="page" href="#">
+                          Dashboard
+                        </a>
+                      </li>
 
-            <li class="nav-item mt-3">
-              <a class="nav-link text-white" href="#">
-                Settings
-              </a>
-            </li>
+                      <li class="nav-item mt-3">
+                        <a class="nav-link text-white" href="#">
+                          User management
+                        </a>
+                      </li>
 
-            <li class="nav-item bg-dark mt-auto">
-              <a class="nav-link text-white" href="#">
-                Logout
-              </a>
-            </li>
-          </ul>
-      	</nav>
+                      <li class="nav-item mt-3">
+                        <a class="nav-link text-white" href="#">
+                          Documents
+                        </a>
+                      </li>
 
-      	<div class="h-100 d-flex flex-column 
-          container-fluid p-0 bg-light overflow-auto">  
-          <header class="p-3 bg-white">
-            <div class="container p-0">
-              <div class="d-flex flex-wrap align-items-center 
-                justify-content-center justify-content-lg-start">
+                      <li class="nav-item mt-3">
+                        <a class="nav-link text-white" href="#">
+                          Statistics
+                        </a>
+                      </li>
 
-                <div class="nav col-12 col-lg-auto 
-                  me-lg-auto mb-2 justify-content-center
-                  align-items-center mb-2 mb-lg-0">
-                  <a class="d-md-none px-3" data-bs-toggle="offcanvas" 
-                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <svg viewBox="0 0 100 80" width="24" height="20">
-                      <rect width="100" height="13"></rect>
-                      <rect y="30" width="100" height="13"></rect>
-                      <rect y="60" width="100" height="13"></rect>
-                    </svg>
+                      <li class="nav-item mt-3">
+                        <a class="nav-link text-white" href="#">
+                          Settings
+                        </a>
+                      </li>
+
+                      <li class="nav-item bg-info mt-auto">
+                        <a class="nav-link text-white" href="#">
+                          Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>                
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-sm-4 col-md-6 col-lg-3 col-xl-5 d-flex justify-content-end justify-content-sm-start">
+              <div class="input-group" style="width: 12rem">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-search"></i>
+                </span>
+                <input type="search" class="form-control" placeholder="Search all..."
+                  aria-label="Search all..." aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-9 col-xl-7">
+              <div class="row d-flex align-items-center justify-content-start justify-content-sm-end">
+                <div class="col-2 col-lg-3 col-xxl-2">
+                  <a class="d-none d-lg-block" href="#">Help guides</a>
+                  <a class="d-lg-none" href="#">
+                    <i class="fa-solid fa-question"></i>
                   </a>
 
-                  <div class="offcanvas offcanvas-start" style="width: 250px;" 
-                    tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-body p-0">
-                      <nav class="h-100 d-flex flex-column p-0 bg-dark bg-opacity-75">
-                        <a class="p-3 w-bold text-white text-decoration-none" href="#">
-                          <img class="me-1" src="assets/logo.svg" alt="Company logo" />
+                </div>
 
-                          <span>Company name</span>
-                        </a>
-
-                        <ul class="nav h-100 flex-column ">
-                          <li class="nav-item mt-3">
-                            <a class="nav-link active text-white" 
-                              aria-current="page" href="#">
-                              Dashboard
-                            </a>
-                          </li>
-
-                          <li class="nav-item mt-3">
-                            <a class="nav-link text-white" href="#">
-                              User management
-                            </a>
-                          </li>
-
-                          <li class="nav-item mt-3">
-                            <a class="nav-link text-white" href="#">
-                              Documents
-                            </a>
-                          </li>
-
-                          <li class="nav-item mt-3">
-                            <a class="nav-link text-white" href="#">
-                              Statistics
-                            </a>
-                          </li>
-
-                          <li class="nav-item mt-3">
-                            <a class="nav-link text-white" href="#">
-                              Settings
-                            </a>
-                          </li>
-
-                          <li class="nav-item bg-info mt-auto">
-                            <a class="nav-link text-white" href="#">
-                              Logout
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>                
-                    </div>
-                  </div>
-
-                  <div class="px-3">
-                    <a href="#">Inbox</a>
+                <div class="col-2">
+                  <div>
+                    <a class="d-none d-lg-inline-block" href="#">Inbox</a>
 
                     <a href="#">
                       <i class="fa-solid fa-inbox position-relative">
@@ -153,125 +168,132 @@
                       </i>
                     </a>
                   </div>
+                </div>
 
-                  <a class="btn btn-primary btn-sm px-3"
+                <div class="col-2 col-lg-4 col-xxl-3">
+                  <a class="btn btn-primary btn-sm d-none d-lg-inline-block"
                     href="#" role="button">Download client
                   </a>
-                </div>
-
-                <div class="input-group input-width col-12 col-lg-auto
-                  mb-3 mb-lg-0 me-lg-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <i class="fa fa-search"></i>
-                  </span>
-                  <input type="search" class="form-control" placeholder="Search all..."
-                    aria-label="Search all..." aria-describedby="basic-addon1">
-                </div>
-
-                <div class="dropdown text-end">
-                  <a class="btn position-relative p-0" role="button" 
-                    data-bs-toggle="dropdown" id="dropdownProfile" 
-                    aria-expanded="false" href="#">
-
-                    <img class="rounded-circle" src="assets/profile.jpg"
-                      alt="Godlike guy" width="50" />
-
-                    <span class="position-absolute bottom-0 end-0 p-2 
-                      bg-success border border-light rounded-circle">
-                      <span class="visually-hidden">Online</span>
-                    </span>
+                  <a class="d-lg-none" href="#">
+                    <i class="fa-solid fa-download"></i>
                   </a>
+                </div>
 
-                  <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
-                    <li>
-                      <a class="dropdown-item" href="#">Action</a>
-                    </li>
+                <div class="col-6 col-sm-3 col-lg-2">
+                  <div class="dropdown text-end">
+                    <a class="btn position-relative p-0" role="button" 
+                      data-bs-toggle="dropdown" id="dropdownProfile" 
+                      aria-expanded="false" href="#">
 
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
+                      <img class="rounded-circle" src="assets/profile.jpg"
+                        alt="Godlike guy" width="50" />
 
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                      <span class="position-absolute bottom-0 end-0 p-2 
+                        bg-success border border-light rounded-circle">
+                        <span class="visually-hidden">Online</span>
+                      </span>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </header>
+          </div>
+        </div>
+      </header>
 
-          <section class="h-100 d-flex flex-column container-xxl 
-            mx-auto my-3 bg-white p-0">
-            <header class="d-flex align-items-center p-3
-              text-nowrap flex-wrap justify-content-evenly
-              flex-column flex-sm-row">
-              <nav aria-label="breadcrumb text-nowrap px-3">
-                <ol class="breadcrumb m-0">
-                  <li class="breadcrumb-item">
-                    <a href="#">Home</a>
-                  </li>
+      <section class="container-xxl h-100 p-3">
+        <div class="card h-100">
+          <div class="card-header bg-white">
+            <div class="row gy-3">
+              <div class="col-12">
+                <nav aria-label="breadcrumb text-nowrap">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                      <a href="#">Home</a>
+                    </li>
 
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Dashboard
-                  </li>
-                </ol>
-              </nav>
-              
-              <a class="mb-3" href="#">
-                <h5 class="h5 mb-0">Order Catalogue
-                  <span class="badge bg-success">New items</span>
-                </h2>
-              </a>
-
-              <form class="d-flex ms-0 ms-sm-auto
-                form-width flex-column flex-lg-row
-                justify-content-center
-                mb-3">
-                <select class="form-select input-width
-                  mb-3 mb-lg-0" aria-label="Select column">
-                  <option selected>Select column</option>
-                  <option value="1">Column one</option>
-                  <option value="2">Column two</option>
-                  <option value="3">Column three</option>
-                </select>
-
-                <div class="input-group input-width ms-0 ms-lg-5">
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-search"></i>
-                  </span>
-                  <input type="search" class="form-control" placeholder="Search list"
-                    aria-label="Search list" aria-describedby="basic-addon2">
-                </div>
-              </form>
-
-              <div class="dropstart mb-3">
-                <a class="btn mx-3" role="button" 
-                  data-bs-toggle="dropdown" id="dropdownFilters" 
-                  aria-expanded="false" href="#">
-
-                  <img src="assets/triangle.svg" alt="pyramid" />
-                </a>
-
-                <ul class="dropdown-menu" aria-labelledby="dropdownFilters">
-                  <li>
-                    <a class="dropdown-item" href="#">Filter 25</a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Filter 50</a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Filter 100</a>
-                  </li>
-                </ul>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Dashboard
+                    </li>
+                  </ol>
+                </nav>
               </div>
 
-              <a class="btn btn-primary mb-3" href="#" role="button">Add new
-              </a>
-            </header>
+              <div class="col-12 col-xl-5">
+                <h1 class="h5 mb-0">Order Catalogue
+                  <span class="badge bg-success">New items</span>
+                </h1>
+              </div>
 
-            <div class="table-responsive-md">
+              <div class="col-12 col-xl-7">
+                <div class="row gy-2 d-flex justify-content-center">
+                  <div class="col-8 col-sm-4">
+                    <select class="form-select" aria-label="Select column">
+                      <option selected>Select column</option>
+                      <option value="1">Column one</option>
+                      <option value="2">Column two</option>
+                      <option value="3">Column three</option>
+                    </select>
+                  </div>
+
+                  <div class="col-8 col-sm-4">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                      </span>
+                      <input type="search" class="form-control" placeholder="Search list"
+                        aria-label="Search list" aria-describedby="basic-addon2">
+                    </div>
+                  </div>
+
+                  <div class="col-7 col-sm-4 d-flex justify-content-evenly">
+                    <div class="dropdown">
+                      <a class="btn" role="button" 
+                        data-bs-toggle="dropdown" id="dropdownFilters" 
+                        aria-expanded="false" href="#">
+
+                        <img src="assets/triangle.svg" alt="pyramid" />
+                      </a>
+
+                      <ul class="dropdown-menu" aria-labelledby="dropdownFilters">
+                        <li>
+                          <a class="dropdown-item" href="#">Filter 25</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Filter 50</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Filter 100</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a class="btn btn-primary" href="#" role="button">Add new
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-body">
+            <div class="table-responsive">
               <table class="table">
                 <thead class="table-light">
                   <tr>
@@ -406,57 +428,61 @@
                 </tbody>
               </table>
             </div>
+          </div>
 
-            <footer class="d-flex align-items-center
-              flex-column-reverse flex-sm-row
-              py-3 mt-auto me-3">
-              <nav aria-label="Page navigation" class="mx-auto">
-                <ul class="pagination pagination-sm mb-0">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&lt;</span>
-                    </a>
-                  </li>
+          <div class="card-footer bg-white">
+            <div class="row gy-3">
+              <div class="col-12 col-lg-4 offset-lg-4 d-flex justify-content-center align-items-center order-last order-lg-first">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination pagination-sm mb-0">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                      </a>
+                    </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#">1</a>
-                  </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
 
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2</a>
+                    </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                  </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#">4</a>
-                  </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#">...10</a>
-                  </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">...10</a>
+                    </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&gt;
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-
-              <select class="form-select w-auto
-                mb-3 mb-sm-0" aria-label="select-form">
-                <option selected>Display 10 items</option>
-                <option value="1">Display 30 items</option>
-                <option value="2">Display 50 items</option>
-                <option value="3">Display 100 items</option>
-              </select>
-            </footer>
-          </section>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&gt;
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                <select class="form-select w-auto
+                  mb-3 mb-sm-0" aria-label="select-form">
+                  <option selected>Display 10 items</option>
+                  <option value="1">Display 30 items</option>
+                  <option value="2">Display 50 items</option>
+                  <option value="3">Display 100 items</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+    </div>
   </body>
 </html>
