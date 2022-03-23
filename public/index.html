@@ -20,8 +20,8 @@
   <body class="h-100">
     <div class="h-100 container-fluid p-0 d-flex">
       	<nav class="h-100 d-none d-md-flex 
-          flex-column p-0 bg-dark">
-      		<a class="p-3 w-bold text-nowrap" href="#">
+          flex-column p-0 bg-dark bg-opacity-75">
+      		<a class="p-3 w-bold text-nowrap text-white text-decoration-none" href="#">
       		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
       		  <span>Company name</span>
@@ -29,38 +29,38 @@
 
       		<ul class="nav h-100 flex-column" style="width: 250px">
             <li class="nav-item mt-3">
-              <a class="nav-link active" 
+              <a class="nav-link active text-white" 
                 aria-current="page" href="#">
                 Dashboard
               </a>
             </li>
 
             <li class="nav-item mt-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 User management
               </a>
             </li>
 
             <li class="nav-item mt-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 Documents
               </a>
             </li>
 
             <li class="nav-item mt-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 Statistics
               </a>
             </li>
 
             <li class="nav-item mt-3">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 Settings
               </a>
             </li>
 
-            <li class="nav-item bg-info mt-auto">
-              <a class="nav-link" href="#">
+            <li class="nav-item bg-dark mt-auto">
+              <a class="nav-link text-white" href="#">
                 Logout
               </a>
             </li>
@@ -68,7 +68,7 @@
       	</nav>
 
       	<div class="h-100 d-flex flex-column 
-          container-fluid p-0 bg-light">  
+          container-fluid p-0 bg-light overflow-auto">  
           <header class="p-3 bg-white">
             <div class="container p-0">
               <div class="d-flex flex-wrap align-items-center 
@@ -89,47 +89,47 @@
                   <div class="offcanvas offcanvas-start" style="width: 250px;" 
                     tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-body p-0">
-                      <nav class="h-100 d-flex flex-column p-0 bg-dark">
-                        <a class="p-3 w-bold w-100" href="#">
+                      <nav class="h-100 d-flex flex-column p-0 bg-dark bg-opacity-75">
+                        <a class="p-3 w-bold text-white text-decoration-none" href="#">
                           <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
                           <span>Company name</span>
                         </a>
 
-                        <ul class="nav h-100 flex-column">
+                        <ul class="nav h-100 flex-column ">
                           <li class="nav-item mt-3">
-                            <a class="nav-link active" 
+                            <a class="nav-link active text-white" 
                               aria-current="page" href="#">
                               Dashboard
                             </a>
                           </li>
 
                           <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                               User management
                             </a>
                           </li>
 
                           <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                               Documents
                             </a>
                           </li>
 
                           <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                               Statistics
                             </a>
                           </li>
 
                           <li class="nav-item mt-3">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                               Settings
                             </a>
                           </li>
 
                           <li class="nav-item bg-info mt-auto">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-white" href="#">
                               Logout
                             </a>
                           </li>
@@ -137,19 +137,6 @@
                       </nav>                
                     </div>
                   </div>
-
-
-                  <nav aria-label="breadcrumb text-nowrap px-3">
-                    <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                        <a href="#">Home</a>
-                      </li>
-
-                      <li class="breadcrumb-item active" aria-current="page">
-                        Dashboard
-                      </li>
-                    </ol>
-                  </nav>
 
                   <div class="px-3">
                     <a href="#">Inbox</a>
@@ -167,7 +154,7 @@
                     </a>
                   </div>
 
-                  <a class="btn btn-info btn-sm px-3"
+                  <a class="btn btn-primary btn-sm px-3"
                     href="#" role="button">Download client
                   </a>
                 </div>
@@ -218,6 +205,18 @@
             <header class="d-flex align-items-center p-3
               text-nowrap flex-wrap justify-content-evenly
               flex-column flex-sm-row">
+              <nav aria-label="breadcrumb text-nowrap px-3">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dashboard
+                  </li>
+                </ol>
+              </nav>
+              
               <a class="mb-3" href="#">
                 <h5 class="h5 mb-0">Order Catalogue
                   <span class="badge bg-success">New items</span>
@@ -268,7 +267,7 @@
                 </ul>
               </div>
 
-              <a class="btn btn-info mb-3" href="#" role="button">Add new
+              <a class="btn btn-primary mb-3" href="#" role="button">Add new
               </a>
             </header>
 
