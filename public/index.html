@@ -18,8 +18,7 @@
   </head>
 
   <body class="h-100 d-flex">
-  	<nav class=" d-none d-md-flex 
-      flex-column p-0 bg-dark bg-opacity-75">
+  	<nav class=" d-none d-md-flex flex-column p-0 bg-dark bg-opacity-75">
   		<a class="p-3 w-bold text-nowrap text-white text-decoration-none" href="#">
   		  <img class="me-1" src="assets/logo.svg" alt="Company logo" />
 
@@ -122,7 +121,7 @@
                         </a>
                       </li>
 
-                      <li class="nav-item bg-info mt-auto">
+                      <li class="nav-item bg-dark mt-auto">
                         <a class="nav-link text-white" href="#">
                           Logout
                         </a>
@@ -137,6 +136,7 @@
                 <span class="input-group-text" id="basic-addon1">
                   <i class="fa fa-search"></i>
                 </span>
+
                 <input type="search" class="form-control" placeholder="Search all..."
                   aria-label="Search all..." aria-describedby="basic-addon1">
               </div>
@@ -146,34 +146,33 @@
               <div class="row d-flex align-items-center justify-content-start justify-content-sm-end">
                 <div class="col-2 col-lg-3 col-xxl-2">
                   <a class="d-none d-lg-block" href="#">Help guides</a>
+
                   <a class="d-lg-none" href="#">
                     <i class="fa-solid fa-question"></i>
                   </a>
-
                 </div>
 
                 <div class="col-2">
-                  <div>
-                    <a class="d-none d-lg-inline-block" href="#">Inbox</a>
+                  <a class="d-none d-lg-inline-block" href="#">Inbox</a>
 
-                    <a href="#">
-                      <i class="fa-solid fa-inbox position-relative">
-                        <span class="position-absolute top-0 start-100 
-                          translate-middle p-1 bg-danger border 
-                          border-light rounded-circle">
+                  <a href="#">
+                    <i class="fa-solid fa-inbox position-relative">
+                      <span class="position-absolute top-0 start-100 
+                        translate-middle p-1 bg-danger border 
+                        border-light rounded-circle">
 
-                          <span class="visually-hidden">Unread messages
-                          </span>
+                        <span class="visually-hidden">Unread messages
                         </span>
-                      </i>
-                    </a>
-                  </div>
+                      </span>
+                    </i>
+                  </a>
                 </div>
 
                 <div class="col-2 col-lg-4 col-xxl-3">
                   <a class="btn btn-primary btn-sm d-none d-lg-inline-block"
                     href="#" role="button">Download client
                   </a>
+
                   <a class="d-lg-none" href="#">
                     <i class="fa-solid fa-download"></i>
                   </a>
@@ -219,19 +218,17 @@
         <div class="card h-100">
           <div class="card-header bg-white">
             <div class="row gy-3">
-              <div class="col-12">
-                <nav aria-label="breadcrumb text-nowrap">
-                  <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item">
-                      <a href="#">Home</a>
-                    </li>
+              <nav class="col-12" aria-label="breadcrumb">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
 
-                    <li class="breadcrumb-item active" aria-current="page">
-                      Dashboard
-                    </li>
-                  </ol>
-                </nav>
-              </div>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dashboard
+                  </li>
+                </ol>
+              </nav>
 
               <div class="col-12 col-xl-5">
                 <h1 class="h5 mb-0">Order Catalogue
@@ -255,6 +252,7 @@
                       <span class="input-group-text" id="basic-addon2">
                         <i class="fa fa-search"></i>
                       </span>
+
                       <input type="search" class="form-control" placeholder="Search list"
                         aria-label="Search list" aria-describedby="basic-addon2">
                     </div>
@@ -292,142 +290,140 @@
             </div>
           </div>
           
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Serial code</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Actions</th>
-                  </tr>
-                </thead>
+          <div class="card-body table-responsive">
+            <table class="table">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Serial code</th>
+                  <th scope="col">Stock</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
 
-                <tbody class="border-top-0 text-nowrap">
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+              <tbody class="border-top-0 text-nowrap">
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <th scope="row">03</th>
-                    <td>Mackbook Pro 16</td>
-                    <td>#123-456ABC</td>
-                    <td>123</td>
-                    <td>Apple</td>
-                    <td colspan="2">
-                      <a class="me-2" href="#">Edit</a> 
-                      <a href="#">Delete</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Mackbook Pro 16</td>
+                  <td>#123-456ABC</td>
+                  <td>123</td>
+                  <td>Apple</td>
+                  <td colspan="2">
+                    <a class="me-2" href="#">Edit</a> 
+                    <a href="#">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="card-footer bg-white">
@@ -470,9 +466,9 @@
                   </ul>
                 </nav>
               </div>
+
               <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
-                <select class="form-select w-auto
-                  mb-3 mb-sm-0" aria-label="select-form">
+                <select class="form-select w-auto mb-3 mb-sm-0" aria-label="select-form">
                   <option selected>Display 10 items</option>
                   <option value="1">Display 30 items</option>
                   <option value="2">Display 50 items</option>
