@@ -66,7 +66,7 @@
   	</nav>
 
   	<div class="w-100 bg-light overflow-auto d-flex flex-column">  
-      <header class="p-3 bg-white">
+      <header class="py-3 bg-white">
         <div class="container-xxl">
           <div class="row gy-2 align-items-center">
             <div class="col-2 d-md-none">  
@@ -145,21 +145,21 @@
             <div class="col-12 col-sm-6 col-lg-9 col-xl-7">
               <div class="row d-flex align-items-center justify-content-start justify-content-sm-end">
                 <div class="col-2 col-lg-3 col-xxl-2">
-                  <a class="d-none d-lg-block" href="#">Help guides</a>
+                  <a href="#">
+                    <span class="d-none d-lg-block">Help guides</span>
 
-                  <a class="d-lg-none" href="#">
-                    <i class="fa-solid fa-question"></i>
+                    <i class="d-lg-none fa-solid fa-question"></i>
                   </a>
                 </div>
 
                 <div class="col-2">
-                  <a class="d-none d-lg-inline-block" href="#">Inbox</a>
-
                   <a href="#">
+                    <span class="d-none d-lg-inline-block text-decoration-underline">Inbox</span>
+
                     <i class="fa-solid fa-inbox position-relative">
                       <span class="position-absolute top-0 start-100 
                         translate-middle p-1 bg-danger border 
-                        border-light rounded-circle">
+                        border-light rounded-circle text-decoration-none">
 
                         <span class="visually-hidden">Unread messages
                         </span>
@@ -169,12 +169,12 @@
                 </div>
 
                 <div class="col-2 col-lg-4 col-xxl-3">
-                  <a class="btn btn-primary btn-sm d-none d-lg-inline-block"
-                    href="#" role="button">Download client
-                  </a>
+                  <a href="#">
+                    <button type="button" class="btn btn-primary btn-sm d-none d-lg-inline-block">
+                      Download client
+                    </button>
 
-                  <a class="d-lg-none" href="#">
-                    <i class="fa-solid fa-download"></i>
+                    <i class="d-lg-none fa-solid fa-download"></i>
                   </a>
                 </div>
 
@@ -214,7 +214,7 @@
         </div>
       </header>
 
-      <section class="container-xxl h-100 p-3">
+      <section class="container-xxl h-100 py-3">
         <div class="card h-100">
           <div class="card-header bg-white">
             <div class="row gy-3">
@@ -258,7 +258,7 @@
                     </div>
                   </div>
 
-                  <div class="col-7 col-sm-4 d-flex justify-content-evenly">
+                  <div class="col-7 col-sm-4 d-flex justify-content-between">
                     <div class="dropdown">
                       <a class="btn" role="button" 
                         data-bs-toggle="dropdown" id="dropdownFilters" 
@@ -290,140 +290,142 @@
             </div>
           </div>
           
-          <div class="card-body table-responsive">
-            <table class="table">
-              <thead class="table-light">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Product</th>
-                  <th scope="col">Serial code</th>
-                  <th scope="col">Stock</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Serial code</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
 
-              <tbody class="border-top-0 text-nowrap">
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                <tbody class="border-top-0 text-nowrap">
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
 
-                <tr>
-                  <th scope="row">03</th>
-                  <td>Mackbook Pro 16</td>
-                  <td>#123-456ABC</td>
-                  <td>123</td>
-                  <td>Apple</td>
-                  <td colspan="2">
-                    <a class="me-2" href="#">Edit</a> 
-                    <a href="#">Delete</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Mackbook Pro 16</td>
+                    <td>#123-456ABC</td>
+                    <td>123</td>
+                    <td>Apple</td>
+                    <td colspan="2">
+                      <a class="me-2" href="#">Edit</a> 
+                      <a href="#">Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div class="card-footer bg-white">
