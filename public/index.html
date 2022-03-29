@@ -65,7 +65,7 @@
     	</nav>
 
   	  <div class="column p-0 has-background-grey-lighter is-flex is-flex-direction-column is-clipped">  
-        <header class="mb-5 has-background-white">
+        <header class="has-background-white">
           <div class="container py-3">
             <div class="columns is-mobile is-multiline m-0 is-vcentered">
               <div class="column is-hidden-tablet">  
@@ -120,7 +120,7 @@
                   </div>
 
                   <div class="column is-narrow-tablet is-flex is-justify-content-flex-end">
-                    <div class="dropdown">
+                    <div class="dropdown is-right">
                       <div class="dropdown-trigger">
                         <a aria-haspopup="true" aria-controls="dropdown-menu" href="#">
                           <figure class="is-relative image is-48x48">
@@ -154,8 +154,8 @@
         </header>
 
         <section class="is-flex-grow-1 is-flex">
-          <div class="card container is-flex is-flex-direction-column">
-            <div class="columns is-multiline">
+          <div class="card container is-flex is-flex-direction-column my-5">
+            <header class="columns is-multiline m-0">
               <nav class="breadcrumb column is-12" aria-label="breadcrumbs">
                 <ul>
                   <li>
@@ -170,15 +170,15 @@
                 </ul>
               </nav>
 
-              <div class="column">
+              <div class="column is-5-widescreen is-12">
                 <h1 class="title is-4">Order Catalogue
                   <span class="tag is-primary">New items</span>
                 </h1>
               </div>
 
               <div class="column">
-                <div class="columns">
-                  <div class="column">
+                <div class="columns is-vcentered is-mobile is-multiline">
+                  <div class="column is-narrow-tablet is-7-mobile mx-auto is-flex is-justify-content-center">
                     <div class="select">
                       <select>
                         <option selected>Select column</option>
@@ -189,7 +189,7 @@
                   </div>
                   </div>
 
-                  <div class="column">
+                  <div class="column is-12-mobile is-4-tablet is-flex is-justify-content-center">
                     <div class="control has-icons-left">
                       <input class="input" type="search" placeholder="Search list...">
 
@@ -199,7 +199,7 @@
                     </div>
                   </div>
 
-                  <div class="column is-flex">
+                  <div class="column is-narrow ml-auto">
                     <div class="dropdown">
                       <div class="dropdown-trigger">
                         <a aria-haspopup="true" aria-controls="dropdown-filter" href="#">
@@ -223,13 +223,15 @@
                         </ul>
                       </div>
                     </div>
+                  </div>
 
+                  <div class="column is-narrow-mobile is-flex is-justify-content-flex-end mr-auto">
                     <a class="button is-primary" href="#">Add new
                     </a>
                   </div>
                 </div>
               </div>
-            </div>
+            </header>
             
             <div class="card-content">
               <div class="table-container">
@@ -369,7 +371,7 @@
               </div>
             </div>
 
-            <footer class="footer mt-auto">
+            <footer class="mt-auto p-3 m-3">
               <div class="columns is-vcentered">
                 <div class="column is-three-fifths-widescreen is-offset-one-fifth-widescreen is-two-thirds is-flex is-justify-content-center">
                   <nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
