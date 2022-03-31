@@ -1,20 +1,19 @@
-.indicator-online {
-  width: 0.7rem;
-  height: 0.7rem;
+.indicator {
   display: inline-block;
   border-radius: 50%;
   position: absolute;
   right: 0;
+}
+
+.is-online {
+  width: 0.7rem;
+  height: 0.7rem;
   bottom: 0;
 }
 
-.indicator-unread {
+.is-unread {
   width: 0.4rem;
   height: 0.4rem;
-  display: inline-block;
-  border-radius: 50%;
-  position: absolute;
-  right: 0;
   top: 0;
 }
 
